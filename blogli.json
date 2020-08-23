@@ -1,0 +1,17 @@
+{
+  "title": "Jim's site!",
+  "paths": {
+    "targetDir": "output",
+    "sourceDir": "content",
+    "templates": "templates",
+    "sourceAsssetsDir": "assets",
+    "targetAssetsDir": "assets"
+  },
+  "collections": {
+    "include": ["posts", "blog"]
+  },
+  "prismjs": {
+    "languages": ["javascript", "python", "rust"],
+    "theme": "twilight"
+  }
+}
