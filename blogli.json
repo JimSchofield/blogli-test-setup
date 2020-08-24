@@ -4,7 +4,7 @@
     "targetDir": "output",
     "sourceDir": "content",
     "templates": "templates",
-    "sourceAsssetsDir": "assets",
+    "sourceAssetsDir": "content/assets",
     "targetAssetsDir": "assets"
   },
   "collections": {
