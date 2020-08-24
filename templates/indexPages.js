@@ -1,0 +1,12 @@
+module.exports = ({ content, itemIndex }) => {
+  return `
+    ${content}
+    <ul>
+      ${itemIndex.map(item => {
+        return `
+          <li><a href="${item.url}">${item.title}</a></li>
+        `
+      }).join("")}
+    </ul>
+  `
+}

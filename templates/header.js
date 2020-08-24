@@ -10,7 +10,7 @@ header {
 <header>
   <h1>${title}</h1>
   <ul>
-    <li><a href="#">link 1</a></li>
-    <li><a href="#">link 2</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/posts">Posts</a></li>
 </header>
 `
