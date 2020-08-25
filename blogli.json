@@ -5,7 +5,7 @@
     "sourceDir": "content",
     "templates": "templates",
     "sourceAssetsDir": "content/assets",
-    "targetAssetsDir": "output/assets"
+    "targetAssetsDir": "assets"
   },
   "collections": {
     "include": ["posts", "blog"]
