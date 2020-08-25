@@ -1,7 +1,8 @@
 const header = require('./header');
 const footer = require('./footer');
 
-module.exports = ({siteTitle, assetsDir}) => ({ meta, content}) => (`
+module.exports = ({siteTitle, assetsDir}, meta, content) => {
+  return `
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,4 +18,5 @@ module.exports = ({siteTitle, assetsDir}) => ({ meta, content}) => (`
     ${content}
     ${footer()}
 </body>
-</html>`);
+</html>`
+};
