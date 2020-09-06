@@ -4,7 +4,7 @@ module.exports = ({ content, itemIndex }) => {
     <ul>
       ${itemIndex.map(item => {
         return `
-          <li><a href="${item.url}">${item.title}</a></li>
+          <li><a href="${item.url}">${item.title} yoooooo</a></li>
         `
       }).join("")}
     </ul>

@@ -1,9 +1,8 @@
 {
-  "title": "Blogli test site!",
+  "title": "Jschof",
   "paths": {
     "targetDir": "output",
     "sourceDir": "content",
-    "templates": "templates",
     "sourceAssetsDir": "content/assets",
     "targetAssetsDir": "assets"
   },
