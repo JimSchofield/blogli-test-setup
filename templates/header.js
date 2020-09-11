@@ -1,4 +1,5 @@
-module.exports = ({ title }) => `
+module.exports = (config) => {
+return `
 <style>
 header {
   display: flex;
@@ -8,9 +9,11 @@ header {
 }
 </style>
 <header>
-  <h1>${title}</h1>
+  <h1>${config.siteMeta.siteTitle}</h1>
   <ul>
-    <li><a href="/blog">Blog</a></li>
-    <li><a href="/posts">Posts</a></li>
+    ${config.siteMeta.pagesIndex.map(page => {
+      return `<li><a href="/${page.url}">${page.title}</a></li>`
+    }).join("")}
+  </ul>
 </header>
-`
+`};

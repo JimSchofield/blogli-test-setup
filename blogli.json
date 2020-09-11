@@ -12,5 +12,10 @@
   "prismjs": {
     "languages": ["javascript", "python", "rust"],
     "theme": "twilight"
+  },
+  "address": "http://www.mysite.com/",
+  "seo": {
+    "defaultDescription": "Here is the default site description",
+    "defaultImage": "http://placehold.it/300"
   }
 }

@@ -1,22 +1,31 @@
 const header = require('./header');
 const footer = require('./footer');
 
-module.exports = ({siteTitle, assetsDir}, meta, content) => {
+module.exports = (config, {meta, ...item}, content) => {
+    const title =
+    config.siteMeta.siteTitle +
+    (meta.title && meta.title.length > 0 ? " - " + meta.title : "");
+
   return `
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>${siteTitle + " - " + meta.title}</title>
-    <link href="/${assetsDir}/test.css" rel="stylesheet" type="text/css"/>
-    <link href="/${assetsDir}/prism.css" rel="stylesheet" type="text/css"/>
+    <!-- Primary Meta Tags -->
+    <title>${title}</title>
+    ${item.metaMarkup}
+    <link href="/${
+      config.siteMeta.assetsDir
+    }/prism.css" rel="stylesheet" type="text/css"/>
+    <link href="/${
+      config.siteMeta.assetsDir
+    }/test.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> 
-    <style>body { margin: 0; }</style>
 </head>
 <body>
-    ${header({ title: siteTitle })}
-    ${content}
-    ${footer()}
+  ${header(config)}
+  ${content}
+  ${footer()}
 </body>
 </html>`
 };

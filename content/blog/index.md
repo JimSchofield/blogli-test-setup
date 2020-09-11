@@ -1,5 +1,5 @@
 {
-  "title": "Blog posts"
+  "title": "Blogs"
 }
 
 # Blog posts:
