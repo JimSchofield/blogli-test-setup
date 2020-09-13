@@ -17,5 +17,6 @@
   "seo": {
     "defaultDescription": "Here is the default site description",
     "defaultImage": "http://placehold.it/300"
-  }
+  },
+  "shortcodes": ["checkbox", "test"]
 }
